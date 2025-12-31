@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Copyright 2017 mathsisfun.com -->
+
+<svg
+   width="127.815"
+   height="93.0349"
+   version="1.1"
+   id="svg22"
+   sodipodi:docname="matrix-main-diagonal.svg"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <metadata
+     id="metadata26">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1422"
+     inkscape:window-height="719"
+     id="namedview24"
+     showgrid="false"
+     inkscape:current-layer="svg22"
+     showguides="false"
+     inkscape:showpageshadow="2"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="2.6710408"
+     inkscape:cx="-25.083855"
+     inkscape:cy="17.78333"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1" />
+  <defs
+     id="defs2" />
+  <path
+     inkscape:connector-curvature="0"
+     id="path4"
+     d="M 11.5859,3.71882 C 8.64412,2.94007 5.18319,3.45917 2.41441,3.2862 4.8371,0.863468 3.27965,5.88191 3.71227,7.52589 3.53922,20.5045 3.02007,64.632 3.19313,77.6107 3.36618,81.7639 2.93355,85.9175 3.36618,89.9844 2.32789,89.4649 5.18319,89.8112 5.96191,89.7241 h 5.79699 c 0,1.3844 0.9518,3.8077 -1.3843,3.115 C 7.60583,92.666 4.66404,93.0984 1.98178,92.5799 -0.873508,90.9353 0.424342,87.2147 0.078243,84.5331 c 0,-14.2769 0,-59.7023 0.519147,-74.0654 C 0.770439,7.35283 0.337817,4.23792 0.770439,1.2096 2.06831,-0.693942 4.66404,0.430848 6.65411,0.171298 8.29802,0.344368 11.4128,-0.434382 11.932,1.2096 c 0,0.86524 -0.3461,1.73047 -0.2596,2.59571 z"
+     style="color:#000000;overflow:visible;fill:#0169c9;stroke:#636466;stroke-width:0.147092;stroke-linejoin:round"
+     sodipodi:nodetypes="cccccccccccccccc" />
+  <path
+     inkscape:connector-curvature="0"
+     id="path6"
+     d="m 116.68,3.45917 c 2.942,-0.5191 6.403,-0.17297 9.171,-0.25955 -2.768,-2.595702 -0.605,5.10491 -1.384,6.92198 0,12.6326 0.26,56.414 -0.259,69.0466 -0.173,3.3744 0.09,7.6141 -0.26,10.643 0.865,-0.3463 -1.903,-0.1732 -2.682,-0.1732 h -5.798 c 0,1.3844 -1.038,3.8067 1.385,3.115 2.769,-0.088 5.711,0.2593 8.48,-0.1731 2.942,-1.5575 1.557,-5.6244 1.99,-8.2199 0.259,-13.4983 0.605,-58.0583 0.259,-71.5561 -0.173,-3.80707 0.432,-7.70074 0,-11.50781 -1.297,-1.903542 -3.894,-0.865242 -5.884,-1.124792 -1.73,0.17307 -4.153,-0.43262 -5.278,0.60568 0.09,0.865242 0.26,1.990022 0.26,2.768772 z"
+     style="color:#000000;overflow:visible;fill:#0169c9;stroke:#636466;stroke-width:0.147092;stroke-linejoin:round"
+     sodipodi:nodetypes="cccccscccccccccc" />
+  <text
+     id="text8"
+     style="color:#000000;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:23.0732px;font-family:'Trebuchet MS';-inkscape-font-specification:'Trebuchet MS Bold';overflow:visible;fill:#3584e4;stroke-width:0.571062"
+     y="54.8951"
+     x="16.4191">4</text>
+  <text
+     id="text10"
+     style="color:#000000;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:23.0732px;font-family:'Trebuchet MS';-inkscape-font-specification:'Trebuchet MS Bold';overflow:visible;fill:#3584e4;stroke-width:0.571062"
+     y="23.148899"
+     x="16.199499">7</text>
+  <text
+     id="text12"
+     style="color:#000000;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:23.0732px;font-family:'Trebuchet MS';-inkscape-font-specification:'Trebuchet MS Bold';overflow:visible;fill:#3584e4;stroke-width:0.571062"
+     y="22.732"
+     x="55.136101">6</text>
+  <text
+     id="text14"
+     style="color:#000000;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:23.0732px;font-family:'Trebuchet MS';-inkscape-font-specification:'Trebuchet MS Bold';overflow:visible;fill:#3584e4;stroke-width:0.571062"
+     y="54.8951"
+     x="85.843498">-2</text>
+  <text
+     id="text16"
+     style="color:#000000;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:23.0732px;font-family:'Trebuchet MS';-inkscape-font-specification:'Trebuchet MS Bold';overflow:visible;fill:#3584e4;stroke-width:0.571062"
+     y="23.0137"
+     x="93.594398">4</text>
+  <text
+     id="text18"
+     style="color:#000000;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:23.0732px;font-family:'Trebuchet MS';-inkscape-font-specification:'Trebuchet MS Bold';overflow:visible;fill:#3584e4;stroke-width:0.571062"
+     y="54.540298"
+     x="55.136101">2</text>
+  <text
+     x="16.4191"
+     y="86.540703"
+     style="color:#000000;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:23.0732px;font-family:'Trebuchet MS';-inkscape-font-specification:'Trebuchet MS Bold';overflow:visible;fill:#3584e4;stroke-width:0.571062"
+     id="text841">3</text>
+  <text
+     x="93.329697"
+     y="86.540703"
+     style="color:#000000;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:23.0732px;font-family:'Trebuchet MS';-inkscape-font-specification:'Trebuchet MS Bold';overflow:visible;fill:#3584e4;stroke-width:0.571062"
+     id="text843">9</text>
+  <text
+     x="55.136101"
+     y="86.540703"
+     style="color:#000000;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:23.0732px;font-family:'Trebuchet MS';-inkscape-font-specification:'Trebuchet MS Bold';overflow:visible;fill:#3584e4;stroke-width:0.571062"
+     id="text845">0</text>
+  <rect
+     style="fill:none;stroke:#ffbe6f;stroke-width:1.5;stroke-opacity:0.876448;stop-color:#000000"
+     id="rect12845"
+     width="124.23022"
+     height="18.808172"
+     x="14.93201"
+     y="-12.735298"
+     ry="6.7057505"
+     rx="6.7057586"
+     transform="matrix(0.77179606,0.63587014,-0.63694832,0.7709065,0,0)" />
+</svg>

@@ -1,0 +1,50 @@
+site_name: 日拱一卒
+site_url: https://abotw.github.io/notebook
+copyright: Copyright &copy; 2025 ABOTW
+theme:
+  name: material
+  language: zh
+  palette:
+    primary: teal
+  font:
+    text: Noto Serif SC
+    code: Roboto Mono
+  features:
+    - navigation.instant
+    - navigation.instant.progress
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.tracking
+    - navigation.path
+    - navigation.top
+    - navigation.footer
+    - search.highlight
+    - search.suggest
+    - content.code.copy
+    - content.code.select
+    - content.action.view
+    - content.image.zoom
+  custom_dir: overrides
+plugins:
+  - search
+markdown_extensions:
+  - admonition
+  - codehilite
+  - pymdownx.arithmatex:  # 用于数学公式
+      generic: true
+  - pymdownx.superfences  # 支持更复杂的代码块嵌套
+  - pymdownx.highlight:
+      linenums: true
+      anchor_linenums: true
+  - pymdownx.betterem
+  - pymdownx.tilde
+  - attr_list
+
+extra_javascript:
+  - javascripts/katex.js
+  - https://unpkg.com/katex@0/dist/katex.min.js
+  - https://unpkg.com/katex@0/dist/contrib/auto-render.min.js
+
+extra_css:
+  - https://unpkg.com/katex@0/dist/katex.min.css
+    
