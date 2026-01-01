@@ -1,6 +1,6 @@
 site_name: App Docs
-site_url: http://abotw.github.io/Docs-App
-repo_url: https://github.com/abotw/Docs-App
+site_url: http://abotw.github.io/docs-app
+repo_url: https://github.com/abotw/docs-app
 theme:
   name: material
   features:
