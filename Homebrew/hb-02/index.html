@@ -1,0 +1,1984 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="http://abotw.github.io/docs-app/Homebrew/hb-02/">
+      
+      
+        <link rel="prev" href="../hb-01/">
+      
+      
+        <link rel="next" href="../hb-03/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
+    
+    
+      
+        <title>Homebrew-02: Services - App Docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#homebrew-02-services" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="App Docs" class="md-header__button md-logo" aria-label="App Docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            App Docs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Homebrew-02: Services
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/abotw/docs-app" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="App Docs" class="md-nav__button md-logo" aria-label="App Docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    App Docs
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/abotw/docs-app" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    App Docs
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Homebrew
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Homebrew
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hb-01/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Homebrew-01: Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Homebrew-02: Services
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Homebrew-02: Services
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-what-are-services-in-homebrew" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. What Are “Services” in Homebrew?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-the-brew-services-command" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. The brew services Command
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. The brew services Command">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-check-available-commands" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1 Check Available Commands
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-installing-a-service-example-mysql" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Installing a Service (Example: MySQL)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Installing a Service (Example: MySQL)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-install-mysql" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1 Install MySQL
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-start-mysql-as-a-service" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2 Start MySQL as a Service
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33-check-service-status" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.3 Check Service Status
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-service-lifecycle-start-vs-run" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Service Lifecycle: Start vs Run
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Service Lifecycle: Start vs Run">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41-brew-services-start" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.1 brew services start
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42-brew-services-run" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.2 brew services run
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-stopping-and-restarting-services" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Stopping and Restarting Services
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. Stopping and Restarting Services">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51-stop-a-service" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.1 Stop a Service
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52-restart-a-service" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.2 Restart a Service
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-managing-common-services" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Managing Common Services
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6. Managing Common Services">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#61-mysql" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.1 MySQL
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#62-redis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.2 Redis
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#63-postgresql" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.3 PostgreSQL
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#64-nginx" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.4 Nginx
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-upgrading-services-safely" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Upgrading Services Safely
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7. Upgrading Services Safely">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#71-upgrade-a-service-package" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.1 Upgrade a Service Package
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#72-check-for-breaking-changes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.2 Check for Breaking Changes
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-permissions-users-and-sudo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. Permissions, Users, and sudo
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8. Permissions, Users, and sudo">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#81-user-level-services-default" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.1 User-Level Services (Default)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#82-system-wide-services-advanced" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.2 System-Wide Services (Advanced)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-debugging-service-failures" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9. Debugging Service Failures
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="9. Debugging Service Failures">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#91-check-service-list" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.1 Check Service List
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#92-run-in-foreground" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.2 Run in Foreground
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#93-check-logs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.3 Check Logs
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-homebrew-services-vs-docker" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10. Homebrew Services vs Docker
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#11-service-management-best-practices" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11. Service Management Best Practices
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="11. Service Management Best Practices">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#do" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ✅ Do
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dont" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ❌ Don’t
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#12-real-founder-workflow-example" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        12. Real Founder Workflow Example
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#13-final-thoughts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        13. Final Thoughts
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hb-03/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Homebrew-03: Brewfile
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hb-04/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Homebrew-04: Leaves
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hb-links/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Homebrew-Links
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    LaTex
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    LaTex
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../LaTex/LaTex%E7%8E%AF%E5%A2%83/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    LaTex环境
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../LaTex/latex-01/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    LaTeX-01: Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../LaTex/latex-02/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    LaTeX-02: References
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../LaTex/ol-01/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overleaf-01: Ref
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../LaTex/ol-links/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overleaf Links
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../LaTex/%E5%B8%B8%E7%94%A8%E4%BB%A3%E7%A0%81/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    常用代码
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-what-are-services-in-homebrew" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. What Are “Services” in Homebrew?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-the-brew-services-command" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. The brew services Command
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. The brew services Command">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-check-available-commands" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1 Check Available Commands
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-installing-a-service-example-mysql" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Installing a Service (Example: MySQL)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Installing a Service (Example: MySQL)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-install-mysql" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1 Install MySQL
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-start-mysql-as-a-service" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2 Start MySQL as a Service
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33-check-service-status" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.3 Check Service Status
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-service-lifecycle-start-vs-run" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Service Lifecycle: Start vs Run
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Service Lifecycle: Start vs Run">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41-brew-services-start" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.1 brew services start
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42-brew-services-run" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.2 brew services run
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-stopping-and-restarting-services" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Stopping and Restarting Services
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. Stopping and Restarting Services">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51-stop-a-service" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.1 Stop a Service
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52-restart-a-service" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.2 Restart a Service
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-managing-common-services" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Managing Common Services
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6. Managing Common Services">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#61-mysql" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.1 MySQL
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#62-redis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.2 Redis
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#63-postgresql" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.3 PostgreSQL
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#64-nginx" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.4 Nginx
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-upgrading-services-safely" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Upgrading Services Safely
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7. Upgrading Services Safely">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#71-upgrade-a-service-package" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.1 Upgrade a Service Package
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#72-check-for-breaking-changes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.2 Check for Breaking Changes
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-permissions-users-and-sudo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. Permissions, Users, and sudo
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8. Permissions, Users, and sudo">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#81-user-level-services-default" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.1 User-Level Services (Default)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#82-system-wide-services-advanced" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.2 System-Wide Services (Advanced)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-debugging-service-failures" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9. Debugging Service Failures
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="9. Debugging Service Failures">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#91-check-service-list" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.1 Check Service List
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#92-run-in-foreground" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.2 Run in Foreground
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#93-check-logs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.3 Check Logs
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-homebrew-services-vs-docker" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10. Homebrew Services vs Docker
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#11-service-management-best-practices" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11. Service Management Best Practices
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="11. Service Management Best Practices">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#do" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ✅ Do
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dont" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ❌ Don’t
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#12-real-founder-workflow-example" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        12. Real Founder Workflow Example
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#13-final-thoughts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        13. Final Thoughts
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="homebrew-02-services">Homebrew-02: Services</h1>
+<p>Advanced Homebrew: Managing Services (MySQL, Redis, PostgreSQL, …)</p>
+<h2 id="1-what-are-services-in-homebrew">1. What Are “Services” in Homebrew?</h2>
+<p>In Homebrew, a <strong>service</strong> is a program that:</p>
+<ul>
+<li>runs <strong>in the background</strong></li>
+<li>starts automatically (optionally at login / boot)</li>
+<li>exposes a port or socket</li>
+<li>behaves like a system daemon</li>
+</ul>
+<p>Typical examples:</p>
+<ul>
+<li>MySQL / PostgreSQL → databases</li>
+<li>Redis → cache</li>
+<li>Nginx → web server</li>
+<li>RabbitMQ → message broker</li>
+</ul>
+<p>Homebrew manages services using <strong><code>launchd</code></strong> on macOS.</p>
+<hr />
+<h2 id="2-the-brew-services-command">2. The <code>brew services</code> Command</h2>
+<p>Homebrew extends basic package management with:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>brew<span class="w"> </span>services
+</span></code></pre></div>
+<p>This integrates Homebrew packages with macOS’s <strong>launchd</strong> system.</p>
+<h3 id="21-check-available-commands">2.1 Check Available Commands</h3>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>brew<span class="w"> </span>services<span class="w"> </span>--help
+</span></code></pre></div>
+<p>Core subcommands:</p>
+<ul>
+<li><code>start</code></li>
+<li><code>stop</code></li>
+<li><code>restart</code></li>
+<li><code>list</code></li>
+<li><code>run</code></li>
+</ul>
+<hr />
+<h2 id="3-installing-a-service-example-mysql">3. Installing a Service (Example: MySQL)</h2>
+<h3 id="31-install-mysql">3.1 Install MySQL</h3>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>brew<span class="w"> </span>install<span class="w"> </span>mysql
+</span></code></pre></div>
+<p>Homebrew installs:</p>
+<ul>
+<li>binaries</li>
+<li>default config files</li>
+<li>a launchd service definition</li>
+</ul>
+<hr />
+<h3 id="32-start-mysql-as-a-service">3.2 Start MySQL as a Service</h3>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>brew<span class="w"> </span>services<span class="w"> </span>start<span class="w"> </span>mysql
+</span></code></pre></div>
+<p>This means:</p>
+<ul>
+<li>MySQL runs in the background</li>
+<li>It auto-starts on login</li>
+<li>Managed by <code>launchd</code></li>
+</ul>
+<p>You should see output like:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>Successfully started `mysql` (label: homebrew.mxcl.mysql)
+</span></code></pre></div>
+<hr />
+<h3 id="33-check-service-status">3.3 Check Service Status</h3>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>brew<span class="w"> </span>services<span class="w"> </span>list
+</span></code></pre></div>
+<p>Example output:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>Name    Status  User     File
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>mysql   started yourname ~/Library/LaunchAgents/homebrew.mxcl.mysql.plist
+</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>redis   stopped
+</span></code></pre></div>
+<hr />
+<h2 id="4-service-lifecycle-start-vs-run">4. Service Lifecycle: Start vs Run</h2>
+<h3 id="41-brew-services-start">4.1 <code>brew services start</code></h3>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>brew<span class="w"> </span>services<span class="w"> </span>start<span class="w"> </span>mysql
+</span></code></pre></div>
+<ul>
+<li>Runs as a background daemon</li>
+<li>Restarts on login</li>
+<li>Best for daily development</li>
+</ul>
+<hr />
+<h3 id="42-brew-services-run">4.2 <code>brew services run</code></h3>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>brew<span class="w"> </span>services<span class="w"> </span>run<span class="w"> </span>mysql
+</span></code></pre></div>
+<ul>
+<li>Runs in foreground</li>
+<li>Stops when terminal closes</li>
+<li>Useful for debugging</li>
+</ul>
+<p>Founder tip:
+👉 Use <code>run</code> when tuning configs or debugging startup failures.</p>
+<hr />
+<h2 id="5-stopping-and-restarting-services">5. Stopping and Restarting Services</h2>
+<h3 id="51-stop-a-service">5.1 Stop a Service</h3>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>brew<span class="w"> </span>services<span class="w"> </span>stop<span class="w"> </span>mysql
+</span></code></pre></div>
+<p>This:</p>
+<ul>
+<li>stops the daemon</li>
+<li>prevents auto-start</li>
+</ul>
+<hr />
+<h3 id="52-restart-a-service">5.2 Restart a Service</h3>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>brew<span class="w"> </span>services<span class="w"> </span>restart<span class="w"> </span>mysql
+</span></code></pre></div>
+<p>Use this after:</p>
+<ul>
+<li>changing config files</li>
+<li>upgrading versions</li>
+</ul>
+<hr />
+<h2 id="6-managing-common-services">6. Managing Common Services</h2>
+<h3 id="61-mysql">6.1 MySQL</h3>
+<p>Start:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>brew<span class="w"> </span>services<span class="w"> </span>start<span class="w"> </span>mysql
+</span></code></pre></div>
+<p>Connect:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>mysql<span class="w"> </span>-u<span class="w"> </span>root
+</span></code></pre></div>
+<p>Config location (Apple Silicon):</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>/opt/homebrew/etc/my.cnf
+</span></code></pre></div>
+<p>Data directory:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>/opt/homebrew/var/mysql
+</span></code></pre></div>
+<hr />
+<h3 id="62-redis">6.2 Redis</h3>
+<p>Install:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-15-1"><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a>brew<span class="w"> </span>install<span class="w"> </span>redis
+</span></code></pre></div>
+<p>Start:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-16-1"><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a>brew<span class="w"> </span>services<span class="w"> </span>start<span class="w"> </span>redis
+</span></code></pre></div>
+<p>Check:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-17-1"><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a>redis-cli<span class="w"> </span>ping
+</span></code></pre></div>
+<p>Expected:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-18-1"><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a>PONG
+</span></code></pre></div>
+<hr />
+<h3 id="63-postgresql">6.3 PostgreSQL</h3>
+<p>Install:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-19-1"><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a>brew<span class="w"> </span>install<span class="w"> </span>postgresql@15
+</span></code></pre></div>
+<p>Start:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-20-1"><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a>brew<span class="w"> </span>services<span class="w"> </span>start<span class="w"> </span>postgresql@15
+</span></code></pre></div>
+<p>Connect:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-21-1"><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a>psql<span class="w"> </span>postgres
+</span></code></pre></div>
+<hr />
+<h3 id="64-nginx">6.4 Nginx</h3>
+<p>Install:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-22-1"><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a>brew<span class="w"> </span>install<span class="w"> </span>nginx
+</span></code></pre></div>
+<p>Start:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-23-1"><a id="__codelineno-23-1" name="__codelineno-23-1" href="#__codelineno-23-1"></a>brew<span class="w"> </span>services<span class="w"> </span>start<span class="w"> </span>nginx
+</span></code></pre></div>
+<p>Default port:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-24-1"><a id="__codelineno-24-1" name="__codelineno-24-1" href="#__codelineno-24-1"></a>http://localhost:8080
+</span></code></pre></div>
+<p>Config:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-25-1"><a id="__codelineno-25-1" name="__codelineno-25-1" href="#__codelineno-25-1"></a>/opt/homebrew/etc/nginx/nginx.conf
+</span></code></pre></div>
+<hr />
+<h2 id="7-upgrading-services-safely">7. Upgrading Services Safely</h2>
+<h3 id="71-upgrade-a-service-package">7.1 Upgrade a Service Package</h3>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-26-1"><a id="__codelineno-26-1" name="__codelineno-26-1" href="#__codelineno-26-1"></a>brew<span class="w"> </span>upgrade<span class="w"> </span>mysql
+</span></code></pre></div>
+<p>Important:</p>
+<ul>
+<li>Homebrew <strong>does not auto-restart services</strong></li>
+<li>Restart manually</li>
+</ul>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-27-1"><a id="__codelineno-27-1" name="__codelineno-27-1" href="#__codelineno-27-1"></a>brew<span class="w"> </span>services<span class="w"> </span>restart<span class="w"> </span>mysql
+</span></code></pre></div>
+<hr />
+<h3 id="72-check-for-breaking-changes">7.2 Check for Breaking Changes</h3>
+<p>Before major upgrades:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-28-1"><a id="__codelineno-28-1" name="__codelineno-28-1" href="#__codelineno-28-1"></a>brew<span class="w"> </span>info<span class="w"> </span>mysql
+</span></code></pre></div>
+<p>Read:</p>
+<ul>
+<li>caveats</li>
+<li>migration notes</li>
+</ul>
+<p>Founder rule:</p>
+<blockquote>
+<p>Never blindly upgrade databases on a production-like environment.</p>
+</blockquote>
+<hr />
+<h2 id="8-permissions-users-and-sudo">8. Permissions, Users, and <code>sudo</code></h2>
+<h3 id="81-user-level-services-default">8.1 User-Level Services (Default)</h3>
+<p>Homebrew services run as:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-29-1"><a id="__codelineno-29-1" name="__codelineno-29-1" href="#__codelineno-29-1"></a>your macOS user
+</span></code></pre></div>
+<p>This is intentional:</p>
+<ul>
+<li>safer</li>
+<li>no <code>sudo</code></li>
+<li>fewer permission bugs</li>
+</ul>
+<hr />
+<h3 id="82-system-wide-services-advanced">8.2 System-Wide Services (Advanced)</h3>
+<p>You <em>can</em> run system-level services:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-30-1"><a id="__codelineno-30-1" name="__codelineno-30-1" href="#__codelineno-30-1"></a>sudo<span class="w"> </span>brew<span class="w"> </span>services<span class="w"> </span>start<span class="w"> </span>mysql
+</span></code></pre></div>
+<p>This installs to:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-31-1"><a id="__codelineno-31-1" name="__codelineno-31-1" href="#__codelineno-31-1"></a>/Library/LaunchDaemons
+</span></code></pre></div>
+<p>⚠️ <strong>Not recommended</strong> unless:</p>
+<ul>
+<li>you know launchd well</li>
+<li>you need system-wide access</li>
+</ul>
+<hr />
+<h2 id="9-debugging-service-failures">9. Debugging Service Failures</h2>
+<h3 id="91-check-service-list">9.1 Check Service List</h3>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-32-1"><a id="__codelineno-32-1" name="__codelineno-32-1" href="#__codelineno-32-1"></a>brew<span class="w"> </span>services<span class="w"> </span>list
+</span></code></pre></div>
+<p>Look for:</p>
+<ul>
+<li><code>error</code></li>
+<li><code>stopped</code></li>
+</ul>
+<hr />
+<h3 id="92-run-in-foreground">9.2 Run in Foreground</h3>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-33-1"><a id="__codelineno-33-1" name="__codelineno-33-1" href="#__codelineno-33-1"></a>brew<span class="w"> </span>services<span class="w"> </span>run<span class="w"> </span>mysql
+</span></code></pre></div>
+<p>Errors will appear directly in terminal.</p>
+<hr />
+<h3 id="93-check-logs">9.3 Check Logs</h3>
+<p>Example (MySQL):</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-34-1"><a id="__codelineno-34-1" name="__codelineno-34-1" href="#__codelineno-34-1"></a>tail<span class="w"> </span>-f<span class="w"> </span>/opt/homebrew/var/mysql/<span class="k">$(</span>hostname<span class="k">)</span>.err
+</span></code></pre></div>
+<p>Logs are your best friend.</p>
+<hr />
+<h2 id="10-homebrew-services-vs-docker">10. Homebrew Services vs Docker</h2>
+<table>
+<thead>
+<tr>
+<th>Homebrew Services</th>
+<th>Docker</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Lightweight</td>
+<td>Heavier</td>
+</tr>
+<tr>
+<td>Native performance</td>
+<td>Containerized</td>
+</tr>
+<tr>
+<td>Easy local dev</td>
+<td>Production parity</td>
+</tr>
+<tr>
+<td>Fast startup</td>
+<td>Slower startup</td>
+</tr>
+</tbody>
+</table>
+<p>Founder advice:</p>
+<ul>
+<li>Use <strong>Homebrew services</strong> for <strong>local development</strong></li>
+<li>Use <strong>Docker</strong> for <strong>production simulation</strong></li>
+</ul>
+<hr />
+<h2 id="11-service-management-best-practices">11. Service Management Best Practices</h2>
+<h3 id="do">✅ Do</h3>
+<ul>
+<li>Keep services minimal</li>
+<li>Start only what you need</li>
+<li>Restart after upgrades</li>
+<li>Track configs in Git</li>
+</ul>
+<h3 id="dont">❌ Don’t</h3>
+<ul>
+<li>Run everything at login</li>
+<li>Mix system and brew installs</li>
+<li>Ignore logs</li>
+</ul>
+<hr />
+<h2 id="12-real-founder-workflow-example">12. Real Founder Workflow Example</h2>
+<p>Daily routine:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-35-1"><a id="__codelineno-35-1" name="__codelineno-35-1" href="#__codelineno-35-1"></a>brew<span class="w"> </span>update
+</span><span id="__span-35-2"><a id="__codelineno-35-2" name="__codelineno-35-2" href="#__codelineno-35-2"></a>brew<span class="w"> </span>upgrade
+</span><span id="__span-35-3"><a id="__codelineno-35-3" name="__codelineno-35-3" href="#__codelineno-35-3"></a>brew<span class="w"> </span>services<span class="w"> </span>list
+</span></code></pre></div>
+<p>Project startup:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-36-1"><a id="__codelineno-36-1" name="__codelineno-36-1" href="#__codelineno-36-1"></a>brew<span class="w"> </span>services<span class="w"> </span>start<span class="w"> </span>mysql
+</span><span id="__span-36-2"><a id="__codelineno-36-2" name="__codelineno-36-2" href="#__codelineno-36-2"></a>brew<span class="w"> </span>services<span class="w"> </span>start<span class="w"> </span>redis
+</span></code></pre></div>
+<p>Project shutdown:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-37-1"><a id="__codelineno-37-1" name="__codelineno-37-1" href="#__codelineno-37-1"></a>brew<span class="w"> </span>services<span class="w"> </span>stop<span class="w"> </span>mysql
+</span><span id="__span-37-2"><a id="__codelineno-37-2" name="__codelineno-37-2" href="#__codelineno-37-2"></a>brew<span class="w"> </span>services<span class="w"> </span>stop<span class="w"> </span>redis
+</span></code></pre></div>
+<p>Simple, predictable, scalable.</p>
+<hr />
+<h2 id="13-final-thoughts">13. Final Thoughts</h2>
+<p>Homebrew services turn macOS into a <strong>clean, developer-grade workstation</strong>.</p>
+<p>Once you master:</p>
+<ul>
+<li><code>brew install</code></li>
+<li><code>brew services</code></li>
+<li>config locations</li>
+<li>upgrade workflows</li>
+</ul>
+<p>You’ll have:</p>
+<ul>
+<li>fewer bugs</li>
+<li>faster setups</li>
+<li>happier teams</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["content.code.copy", "search.suggest", "search.highlight"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>
