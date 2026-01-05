@@ -1,4 +1,4 @@
-# README
+# Apps
 
 **说明**
 
@@ -186,16 +186,6 @@
 
 -   [RIME](http://rime.im/) - 中州韻輸入法引擎。
 -   [搜狗输入法](http://pinyin.sogou.com/mac/) - 搜狗输入法。
-
-## Browsers 浏览器
-
--   [Chrome](http://www.google.cn/chrome/browser/) - Chrome 浏览器谷歌出品。
--   [Chrome](https://www.google.com/chrome/) - Chrome, developed by Google
--   [Microsoft Edge](https://www.microsoft.com/zh-cn/edge) - Edge 浏览器微出品，相比于 chrome 青出于蓝胜于蓝
--   [Firefox](http://www.firefox.com.cn/) - 迎接 Firefox Quantum。快，只为更好。火狐浏览器。
--   [Safari](http://www.apple.com/cn/safari/) - Mac 预装自带浏览器。
--   [Safari](https://www.apple.com/safari/) - Native browser for Macs.
--   [Vivaldi](https://vivaldi.com/) - Opera 开发商出品新的浏览器。
 
 ## Utilities 其他实用工具
 
