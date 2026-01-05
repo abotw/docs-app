@@ -126,7 +126,7 @@ ssh-keygen -t ed25519 -C "your_email@example.com"
 ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
 ```
 
-1.  **Copy public key to remote server**
+2.   **Copy public key to remote server**
 
 ```bash
 ssh-copy-id username@remote_ip
@@ -134,7 +134,7 @@ ssh-copy-id username@remote_ip
 
 -   Or manually append `~/.ssh/id_ed25519.pub` to `~/.ssh/authorized_keys` on the server.
 
-1.  **Login without password**
+3.   **Login without password**
 
 ```bash
 ssh username@remote_ip
@@ -174,6 +174,8 @@ ssh -L 8080:localhost:80 username@remote_ip
 
 Access `http://localhost:8080` on your computer to reach remote server's port 80.
 
+`-L`: Local
+
 -   **Remote port forwarding**:
 
 ```bash
@@ -181,6 +183,8 @@ ssh -R 9090:localhost:3000 username@remote_ip
 ```
 
 Makes your local service accessible via remote port 9090.
+
+`-R`: Remote
 
 ------
 
