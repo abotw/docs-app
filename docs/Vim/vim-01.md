@@ -107,15 +107,15 @@ l  right
 
 ### Faster Movement
 
-| Key  | Meaning        |
-| ---- | -------------- |
-| `w`  | next word      |
-| `b`  | previous word  |
-| `0`  | start of line  |
-| `$`  | end of line    |
-| `gg` | top of file    |
-| `G`  | bottom of file |
-| `:n` | go to line n   |
+| Key  | Meaning        |          |
+| ---- | -------------- | -------- |
+| `w`  | next word      | **w**ord |
+| `b`  | previous word  | **b**ack |
+| `0`  | start of line  |          |
+| `$`  | end of line    |          |
+| `gg` | top of file    | **g**o   |
+| `G`  | bottom of file | **G**o   |
+| `:n` | go to line n   |          |
 
 Example:
 
