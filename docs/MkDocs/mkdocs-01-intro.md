@@ -1,5 +1,8 @@
 # MkDocs
 
+-   <https://shafish.cn/blog/mkdocs/>
+-   <https://note.tonycrane.cc/cs/tools/mkdocs/>
+
 ## **1. What is MkDocs?**
 
 MkDocs is a **static site generator** specifically for **project documentation**. It takes Markdown files and converts them into a fully navigable website. Key points:
