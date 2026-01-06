@@ -1,4 +1,13 @@
+---
+status: done
+---
+
 # Vim-01: Intro
+
+![Vimlogo](https://upload.wikimedia.org/wikipedia/commons/9/9f/Vimlogo.svg)
+
+-   **Vim Author:** [Bram Moolenaar](https://nl.wikipedia.org/wiki/Bram_Moolenaar)
+    -   website: [https://www.moolenaar.net/](https://www.moolenaar.net/)
 
 ## 1. What is Vim?
 
@@ -53,6 +62,11 @@ If the file doesn’t exist, Vim will create it.
 ------
 
 ## 4. Vim Modes (MOST IMPORTANT)
+
+-   [Vim Modes Transition Diagram in SVG](https://gist.github.com/darcyparker/1886716)
+-   <https://github.com/nilp0inter/Vim-for-Muggles?tab=readme-ov-file#modes>
+
+![vim-modes](https://github.com/nilp0inter/Vim-for-Muggles/raw/master/modes.png)
 
 Vim works with **modes**:
 
@@ -295,8 +309,11 @@ vimtutor
 ## 15. Common Beginner Mistakes
 
 ❌ Forgetting to press `Esc`
+
 ❌ Using arrow keys
+
 ❌ Trying to learn everything at once
+
 ❌ Panic when stuck (use `:q!` 😄)
 
 ------
