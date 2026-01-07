@@ -1,8 +1,10 @@
 ---
-draft: false
+status: done
 ---
 
 # Markdown: Metadata
+
+-   <https://squidfunk.github.io/mkdocs-material/tutorials/blogs/basic/?h=metadata#post-metadata>
 
 ## 1. What Is Markdown Metadata?
 
