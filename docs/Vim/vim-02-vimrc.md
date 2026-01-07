@@ -1,6 +1,7 @@
 # Vim-02: Vimrc
 
 -   [Vimrc by Albert Wu](http://albertwu.org/cs61a/notes/vimrc.html)
+-   [The Ultimate vimrc](https://github.com/amix/vimrc)
 
 ```
 " --- General Settings ---
