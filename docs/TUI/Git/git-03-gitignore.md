@@ -1,4 +1,10 @@
+---
+status: done
+---
+
 # Git-03: gitignore
+
+-   <https://gitignore.io>
 
 ## 1. What Is `.gitignore`?
 
@@ -11,8 +17,6 @@ Git will completely **ignore** matching files:
 -   They won’t be added by `git add .`
 -   They won’t be committed
 -   They won’t be pushed to GitHub
-
-------
 
 ## 2. Why Do We Need `.gitignore`?
 
@@ -30,8 +34,6 @@ Without `.gitignore`, your repo becomes:
 -   Messy
 -   Unsafe
 -   Hard to review
-
-------
 
 ## 3. Where Is `.gitignore` Located?
 
@@ -51,21 +53,11 @@ my_project/
 
 You can also have **multiple `.gitignore` files**, but beginners should start with **one at the root**.
 
-------
-
 ## 4. Creating a `.gitignore` File
 
 ```bash
-touch .gitignore
+nvim .gitignore
 ```
-
-Or open it directly:
-
-```bash
-nano .gitignore
-```
-
-------
 
 ## 5. Basic `.gitignore` Rules
 
@@ -95,8 +87,6 @@ build/
 node_modules/
 ```
 
-------
-
 ## 6. Common Patterns Explained
 
 ### Wildcard `*`
@@ -108,6 +98,8 @@ Matches any characters:
 ```
 
 ### Ignore files in any folder
+
+-   `**`
 
 ```
 **/*.log
@@ -125,8 +117,6 @@ Matches any characters:
 debug*
 ```
 
-------
-
 ## 7. Comments in `.gitignore`
 
 Use `#` for comments:
@@ -141,8 +131,6 @@ build/
 
 Comments are ignored by Git.
 
-------
-
 ## 8. Negation: “Ignore Everything Except…”
 
 Use `!` to **re-include** a file.
@@ -155,8 +143,6 @@ Example:
 ```
 
 Git ignores all `.log` files **except** `important.log`.
-
-------
 
 ## 9. Very Important Rule (Beginner Trap 🚨)
 
@@ -181,8 +167,6 @@ git commit -m "Stop tracking debug.log"
 
 Now `.gitignore` works.
 
-------
-
 ## 10. Check What Git Is Ignoring
 
 ```bash
@@ -196,8 +180,6 @@ This shows:
 -   Tracked files
 
 Very useful for debugging `.gitignore`.
-
-------
 
 ## 11. Typical `.gitignore` Examples
 
@@ -217,8 +199,6 @@ cmake-build-*/
 *.log
 ```
 
-------
-
 ### Python Project
 
 ```
@@ -228,8 +208,6 @@ __pycache__/
 .env
 ```
 
-------
-
 ### Node.js Project
 
 ```
@@ -237,15 +215,11 @@ node_modules/
 npm-debug.log
 ```
 
-------
-
 ### macOS
 
 ```
 .DS_Store
 ```
-
-------
 
 ## 12. Global `.gitignore` (Optional)
 
@@ -270,26 +244,27 @@ nano ~/.gitignore_global
 git config --global core.excludesfile ~/.gitignore_global
 ```
 
-------
-
 ## 13. Best Practices
 
 ✅ Add `.gitignore` **early**
-✅ Keep it **simple and readable**
-✅ Never commit secrets
-✅ Use comments
-✅ Review before pushing
 
-------
+✅ Keep it **simple and readable**
+
+✅ Never commit secrets
+
+✅ Use comments
+
+✅ Review before pushing
 
 ## 14. Common Beginner Mistakes
 
 ❌ Forgetting `.gitignore` doesn’t remove tracked files
-❌ Ignoring too much
-❌ Putting passwords in Git
-❌ Copying a huge `.gitignore` without understanding it
 
-------
+❌ Ignoring too much
+
+❌ Putting passwords in Git
+
+❌ Copying a huge `.gitignore` without understanding it
 
 ## 15. Quick Checklist
 
@@ -300,8 +275,6 @@ Before committing, ask yourself:
 -   Does this file contain secrets?
 
 If yes → **ignore it**.
-
-------
 
 ## 16. One-Sentence Summary
 
