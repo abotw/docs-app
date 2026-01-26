@@ -7,7 +7,7 @@
 Compared with Vim, Neovim provides:
 
 -   🚀 Faster and more maintainable core
--   🔌 Better plugin system (Lua-based)
+-   🔌 Better plugin system (**Lua-based**)
 -   🧠 Built-in **LSP** (Language Server Protocol)
 -   🧩 First-class support for modern tooling
 -   🖥️ Works well in terminal, SSH, tmux, VS Code, etc.
@@ -105,18 +105,20 @@ Neovim is **modal**. This is the most important idea.
 
 -   `i` → Insert before cursor
 -   `a` → Insert after cursor
--   `o` → New line below
--   `O` → New line above
+    -   **a**ppend
+
+-   `o` → New line bel**o**w
+-   `O` → New line ab**o**ve
 
 ### Delete & Undo
 
-| Key        | Action           |
-| ---------- | ---------------- |
-| `x`        | Delete character |
-| `dd`       | Delete line      |
-| `dw`       | Delete word      |
-| `u`        | Undo             |
-| `Ctrl + r` | Redo             |
+| Key            | Action           |
+| -------------- | ---------------- |
+| `x`            | Delete character |
+| `dd`           | Delete line      |
+| `dw`           | Delete word      |
+| `u`            | Undo             |
+| **`Ctrl + r`** | **Redo**         |
 
 ## 7. Copy, Cut, Paste
 
@@ -131,13 +133,13 @@ Neovim is **modal**. This is the most important idea.
 
 Command mode (`:`):
 
-| Command | Meaning         |
-| ------- | --------------- |
-| `:w`    | Save            |
-| `:q`    | Quit            |
-| `:wq`   | Save & quit     |
-| `:q!`   | Force quit      |
-| `:wqa`  | Save & quit all |
+| Command | Meaning          |
+| ------- | ---------------- |
+| `:w`    | Save (**W**rite) |
+| `:q`    | **Q**uit         |
+| `:wq`   | Save & quit      |
+| `:q!`   | Force quit       |
+| `:wqa`  | Save & quit all  |
 
 ## 9. Neovim Configuration Basics
 
@@ -247,12 +249,12 @@ nvim +Tutor
 
 ## 14. Neovim vs Vim (Quick Summary)
 
-| Feature          | Vim       | Neovim      |
-| ---------------- | --------- | ----------- |
-| Config language  | Vimscript | Lua         |
-| Built-in LSP     | ❌         | ✅           |
-| Plugin ecosystem | Good      | Better      |
-| Community        | Large     | Very active |
+| Feature             | Vim           | Neovim      |
+| ------------------- | ------------- | ----------- |
+| **Config language** | **Vimscript** | **Lua**     |
+| Built-in LSP        | ❌             | ✅           |
+| Plugin ecosystem    | Good          | Better      |
+| Community           | Large         | Very active |
 
 ## 15. Final Advice
 
@@ -260,14 +262,3 @@ Neovim is not hard — **it’s different**.
 
 >   Learn a little every day,
 >   and Neovim will feel natural sooner than you expect.
-
-------
-
-If you want, I can next help you with:
-
--   ✅ **Neovim keymap philosophy**
--   ✅ **A minimal Neovim config from scratch**
--   ✅ **Neovim + Python / C / Java setup**
--   ✅ **Neovim vs VS Code workflow**
-
-Just tell me 👍
