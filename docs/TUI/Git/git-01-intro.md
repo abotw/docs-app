@@ -1,8 +1,12 @@
+---
+status: done
+---
+
 # Git-01: Intro
 
 ## 1. What Is Git?
 
-**Git** is a **version control system**.
+**Git** is a **VCS (version control system)**.
 
 In simple terms, Git helps you:
 
@@ -12,8 +16,6 @@ In simple terms, Git helps you:
 -   Collaborate with others safely
 
 Think of Git as **“save history + undo + collaboration”** for code.
-
-------
 
 ## 2. Why Do We Need Git?
 
@@ -31,8 +33,6 @@ With Git:
 -   You can experiment safely
 -   You can recover from mistakes
 
-------
-
 ## 3. Git vs GitHub (Important!)
 
 Many beginners confuse these two.
@@ -44,8 +44,6 @@ Many beginners confuse these two.
 
 👉 Git works **without the internet**.
 👉 GitHub is **optional**, but useful for sharing.
-
-------
 
 ## 4. Installing Git
 
@@ -74,8 +72,6 @@ git --version
     -   Download from [https://git-scm.com](https://git-scm.com/)
     -   Use “Git Bash” after installation
 
-------
-
 ## 5. Basic Git Concepts (Very Important)
 
 ### Repository (repo)
@@ -98,8 +94,6 @@ A **snapshot** of your project at a point in time.
 Working Directory → Staging Area → Commit
 ```
 
-------
-
 ## 6. Your First Git Repository
 
 ### Step 1: Create a project folder
@@ -117,8 +111,6 @@ git init
 
 Now your folder is a **Git repository** 🎉
 
-------
-
 ## 7. Checking Git Status
 
 ```bash
@@ -132,8 +124,6 @@ This command tells you:
 -   What Git wants you to do next
 
 👉 **Use this command a lot.**
-
-------
 
 ## 8. Adding Files to Git
 
@@ -163,8 +153,6 @@ or stage everything:
 git add .
 ```
 
-------
-
 ## 9. Making Your First Commit
 
 ```bash
@@ -175,8 +163,6 @@ git commit -m "Add hello.txt"
 -   Message should describe **what you changed**
 
 ✅ Now Git has saved a snapshot.
-
-------
 
 ## 10. Viewing History
 
@@ -196,8 +182,6 @@ Short version:
 ```bash
 git log --oneline
 ```
-
-------
 
 ## 11. Modifying Files
 
@@ -220,8 +204,6 @@ git add hello.txt
 git commit -m "Update hello.txt content"
 ```
 
-------
-
 ## 12. Ignoring Files (`.gitignore`)
 
 Some files should **never** be tracked:
@@ -234,7 +216,7 @@ Some files should **never** be tracked:
 Create `.gitignore`:
 
 ```bash
-nano .gitignore
+nvim .gitignore
 ```
 
 Example:
@@ -244,8 +226,6 @@ Example:
 node_modules/
 .env
 ```
-
-------
 
 ## 13. Branches (Safe Experimenting)
 
@@ -271,8 +251,6 @@ git switch feature1
 
 Now you can experiment **without affecting main**.
 
-------
-
 ## 14. Merging Branches
 
 ### Go back to main
@@ -288,8 +266,6 @@ git merge feature1
 ```
 
 Git combines the changes automatically (most of the time).
-
-------
 
 ## 15. Connecting to GitHub (Optional)
 
@@ -311,8 +287,6 @@ git push -u origin main
 git pull
 ```
 
-------
-
 ## 16. Most Important Commands (Cheat Sheet)
 
 ```bash
@@ -327,17 +301,17 @@ git switch      # switch branches
 git merge       # merge branches
 ```
 
-------
-
 ## 17. Common Beginner Mistakes
 
 ❌ Forgetting to commit
-❌ Writing unclear commit messages
-❌ Working only on `main`
-❌ Not checking `git status`
-❌ Deleting `.git` folder
 
-------
+❌ Writing unclear commit messages
+
+❌ Working only on `main`
+
+❌ Not checking `git status`
+
+❌ Deleting `.git` folder
 
 ## 18. How to Learn Git Properly
 

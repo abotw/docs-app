@@ -1,4 +1,4 @@
-# Git-02: gitignore
+# Git-03: gitignore
 
 ## 1. What Is `.gitignore`?
 

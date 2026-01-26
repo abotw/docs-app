@@ -2,7 +2,7 @@
 status: done
 ---
 
-# Git Config
+# Git-02: Config
 
 ## 1. What is `git config`?
 

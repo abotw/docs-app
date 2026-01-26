@@ -2,7 +2,7 @@
 status: done
 ---
 
-# Git Commit Messages
+# Git-04: Commit Messages
 
 ## 1. Why Commit Messages Matter
 
