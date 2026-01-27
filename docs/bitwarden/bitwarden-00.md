@@ -1,6 +1,6 @@
 ---
-title: "Bitwarden-01: Intro"
-subtitle: "A practical guide to managing passwords securely"
+title: "Bitwarden"
+subtitle: "managing passwords"
 icon: simple/bitwarden
 ---
 

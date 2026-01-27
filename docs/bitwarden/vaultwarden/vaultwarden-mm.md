@@ -1,5 +1,5 @@
 ---
-title: Deploying Vaultwarden on M4 Mac mini
+title: "Vaultwarden: Deploying on M4 Mac mini"
 icon: simple/vaultwarden
 ---
 

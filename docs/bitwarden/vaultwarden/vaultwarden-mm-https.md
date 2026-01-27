@@ -1,5 +1,5 @@
 ---
-title: Adding HTTPS to Vaultwarden on M4 Mac mini
+title: "Vaultwarden: Adding HTTPS"
 icon: simple/vaultwarden
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: HTTPS for Vaultwarden in LAN
+title: "Vaultwarden: HTTPS in LAN"
 icon: simple/vaultwarden
 ---
 

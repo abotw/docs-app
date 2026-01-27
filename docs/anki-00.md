@@ -1,6 +1,6 @@
 ---
-title: "Anki-01: Intro"
-subtitle: "A practical introduction to spaced-repetition learning"
+title: "Anki"
+subtitle: spaced-repetition
 icon: simple/anki
 ---
 
