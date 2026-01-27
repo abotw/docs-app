@@ -1,6 +1,6 @@
 ---
 title: Mail
-icon: e-mail
+icon: material/email
 ---
 
 -   国内：网易邮箱大师
