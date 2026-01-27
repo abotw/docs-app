@@ -1,3 +1,7 @@
+---
+status: done
+---
+
 # Neovim-01: Intro
 
 ## 1. What Is Neovim?

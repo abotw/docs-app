@@ -1,12 +1,14 @@
-site_name: App Docs
-site_url: http://abotw.github.io/docs-app
-repo_url: https://github.com/abotw/docs-app
+site_name: SW Docs
+site_url: http://abotw.github.io/docs-sw
+repo_url: https://github.com/abotw/docs-sw
+
 theme:
   name: material
   features:
     - content.code.copy
     - search.suggest
     - search.highlight
+
 markdown_extensions:
   - pymdownx.highlight:
       anchor_linenums: true
@@ -15,5 +17,6 @@ markdown_extensions:
   - pymdownx.inlinehilite
   - pymdownx.snippets
   - pymdownx.superfences
+
 plugins:
   - search

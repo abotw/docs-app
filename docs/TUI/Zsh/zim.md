@@ -61,12 +61,12 @@ After installation, restart your terminal.
 
 After installation, you’ll see these files:
 
-| File        | Purpose                          |
-| ----------- | -------------------------------- |
-| `~/.zshrc`  | Main Zsh config                  |
-| `~/.zimrc`  | Zim module list (very important) |
-| `~/.zshenv` | Environment variables            |
-| `~/.zim/`   | Zim modules directory            |
+| File           | Purpose                              |
+| -------------- | ------------------------------------ |
+| `~/.zshrc`     | Main Zsh config                      |
+| **`~/.zimrc`** | **Zim module list (very important)** |
+| `~/.zshenv`    | Environment variables                |
+| `~/.zim/`      | Zim modules directory                |
 
 📌 **You mainly edit `~/.zimrc` and `~/.zshrc`**
 

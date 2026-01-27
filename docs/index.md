@@ -1,10 +1,8 @@
-# App Docs
+# Software Docs
 
-Some docs about applications.
+Documents about my softwares.
+
+## Links
 
 -   [App Defaults](https://defaults.rknight.me/)
 
-## MISC
-
--   [LICEcap](https://www.cockos.com/licecap/) - simple animated screen captures
--   [KAP](https://getkap.co/)
