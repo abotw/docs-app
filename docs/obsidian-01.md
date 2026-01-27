@@ -1,5 +1,5 @@
 ---
-name: "Obsidian-01: Intro"
+title: "Obsidian"
 icon: simple/obsidian
 ---
 
