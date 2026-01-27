@@ -1,4 +1,7 @@
-# Obsidian-01: Intro
+---
+name: "Obsidian-01: Intro"
+icon: simple/obsidian
+---
 
 ## 1. What Is Obsidian?
 
