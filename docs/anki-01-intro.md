@@ -1,7 +1,7 @@
 ---
 title: "Anki-01: Intro"
 subtitle: "A practical introduction to spaced-repetition learning"
-icon: simple:anki
+icon: simple/anki
 ---
 
 ## 1. What is Anki?
