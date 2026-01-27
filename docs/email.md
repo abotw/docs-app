@@ -1,5 +1,5 @@
 ---
-title: Mail
+title: EMail
 icon: material/email
 ---
 
