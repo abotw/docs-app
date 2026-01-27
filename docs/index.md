@@ -1,3 +1,7 @@
+---
+icon: material/emoticon-happy
+---
+
 # Software Docs
 
 Documents about my softwares.
