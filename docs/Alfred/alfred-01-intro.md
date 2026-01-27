@@ -1,5 +1,5 @@
 ---
-title: Alfred-01: Intro
+title: "Alfred-01: Intro"
 icon: simple/alfred
 ---
 

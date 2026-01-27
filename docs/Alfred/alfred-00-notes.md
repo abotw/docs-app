@@ -1,9 +1,7 @@
 ---
-title: Alfred-00: Notes
+title: "Alfred-00: Notes"
 icon: simple/alfred
 ---
-
-# Alfred
 
 - [Alfred 简介](https://www.dreamxu.com/books/software/alfred/)
 
