@@ -1,0 +1,6 @@
+---
+icon: simple-latex
+---
+
+# LaTex
+
