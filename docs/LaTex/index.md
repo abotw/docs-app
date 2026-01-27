@@ -1,5 +1,5 @@
 ---
-icon: simple-latex
+icon: simple/latex
 ---
 
 # LaTex
