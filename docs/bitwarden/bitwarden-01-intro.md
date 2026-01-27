@@ -1,6 +1,8 @@
-# Bitwarden
-
-*A practical guide to managing passwords securely*
+---
+title: "Bitwarden-01: Intro"
+subtitle: "A practical guide to managing passwords securely"
+icon: simple/bitwarden
+---
 
 ## 1. What Is Bitwarden?
 

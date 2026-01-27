@@ -1,4 +1,7 @@
-# Adding HTTPS to Vaultwarden on M4 Mac mini
+---
+title: Adding HTTPS to Vaultwarden on M4 Mac mini
+icon: simple/vaultwarden
+---
 
 ## 1. What We Are Going to Do (Big Picture)
 

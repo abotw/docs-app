@@ -1,4 +1,7 @@
-# HTTPS for Vaultwarden in LAN
+---
+title: HTTPS for Vaultwarden in LAN
+icon: simple/vaultwarden
+---
 
 ## First: Important Reality Check
 

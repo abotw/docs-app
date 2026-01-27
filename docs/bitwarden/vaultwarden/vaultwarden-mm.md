@@ -1,4 +1,7 @@
-# Deploying Vaultwarden on M4 Mac mini
+---
+title: Deploying Vaultwarden on M4 Mac mini
+icon: simple/vaultwarden
+---
 
 ## 0. What is Vaultwarden (and why use it)?
 
