@@ -1,4 +1,7 @@
-# Alfred-01
+---
+title: Alfred-01: Intro
+icon: simple/alfred
+---
 
 ## 1. What Is Alfred?
 
