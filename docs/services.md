@@ -1,4 +1,7 @@
-# Services
+---
+title: Services
+icon: material/server
+---
 
 ## Rent
 

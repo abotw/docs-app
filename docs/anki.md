@@ -1,8 +1,8 @@
-# Anki-01: Intro
-
-*A practical introduction to spaced-repetition learning*
-
-------
+---
+title: "Anki-01: Intro"
+subtitle: "A practical introduction to spaced-repetition learning"
+icon: simple:anki
+---
 
 ## 1. What is Anki?
 
