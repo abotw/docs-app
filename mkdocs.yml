@@ -5,7 +5,7 @@ repo_url: https://github.com/abotw/docs-sw
 theme:
   name: material
   palette:
-    primary: deep orange
+    primary: green 
   features:
     - content.code.copy
     - search.suggest
