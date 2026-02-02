@@ -1,7 +1,8 @@
 ---
 title: "Bitwarden"
-subtitle: "managing passwords"
+subtitle: "Passwords"
 icon: simple/bitwarden
+status: done
 ---
 
 ## 1. What Is Bitwarden?
@@ -15,8 +16,6 @@ icon: simple/bitwarden
 -   Share passwords safely (with family or teams)
 
 It uses **end-to-end encryption**, meaning **only you can see your data** — not even Bitwarden.
-
-------
 
 ## 2. Why Use a Password Manager?
 
@@ -32,8 +31,6 @@ With Bitwarden:
 -   All other passwords are **unique & random**
 -   Much safer and more convenient ✅
 
-------
-
 ## 3. Bitwarden Plans (Simple Overview)
 
 | Plan           | Cost      | For whom                       |
@@ -43,8 +40,6 @@ With Bitwarden:
 | Family / Teams | Paid      | Sharing with others            |
 
 👉 **Free plan is enough for most beginners.**
-
-------
 
 ## 4. Creating Your Bitwarden Account
 
@@ -70,8 +65,6 @@ Correct-Horse!Battery#2026
 
 ⚠️ Bitwarden **cannot recover** your master password if you forget it.
 
-------
-
 ## 5. Install Bitwarden on Your Devices
 
 You can use Bitwarden on **multiple platforms**.
@@ -87,8 +80,6 @@ You can use Bitwarden on **multiple platforms**.
 -   Install from the official extension store
 -   Log in using your Bitwarden account
 
-------
-
 ## 6. Understanding the Bitwarden Vault
 
 Your **Vault** is where everything is stored.
@@ -101,8 +92,6 @@ Your **Vault** is where everything is stored.
 | Card        | Credit/debit cards    |
 | Identity    | Name, address, phone  |
 | Secure Note | Wi-Fi passwords, keys |
-
-------
 
 ## 7. Saving Your First Password
 
@@ -124,8 +113,6 @@ Your **Vault** is where everything is stored.
     -   Website URL
 5.  Save
 
-------
-
 ## 8. Using Autofill (Daily Usage)
 
 ### Browser
@@ -141,8 +128,6 @@ Your **Vault** is where everything is stored.
 | macOS         | `Cmd + Shift + L`  |
 | Windows/Linux | `Ctrl + Shift + L` |
 
-------
-
 ## 9. Generating Strong Passwords
 
 Never create passwords yourself again.
@@ -156,8 +141,6 @@ Never create passwords yourself again.
 
 ✅ Each site gets a **unique password**
 
-------
-
 ## 10. Organizing Your Vault
 
 ### Folders
@@ -170,8 +153,6 @@ Never create passwords yourself again.
 ### Search
 
 -   Fast search by site name or username
-
-------
 
 ## 11. Security Features You Should Enable
 
@@ -189,15 +170,11 @@ Never create passwords yourself again.
     -   5–15 minutes
     -   On browser close
 
-------
-
 ## 12. Using Bitwarden on Multiple Devices
 
 -   Log in on each device
 -   Vault syncs automatically
 -   All encryption happens **locally**
-
-------
 
 ## 13. Importing Passwords from Browsers
 
@@ -209,8 +186,6 @@ If you already saved passwords in Chrome/Edge:
 4.  Upload file
 5.  Delete the CSV afterward (important!)
 
-------
-
 ## 14. Common Beginner Mistakes (Avoid These)
 
 ❌ Weak master password
@@ -220,8 +195,6 @@ If you already saved passwords in Chrome/Edge:
 ❌ Saving passwords in browsers instead of Bitwarden
 
 ❌ Keeping exported CSV files
-
-------
 
 ## 15. Free vs Premium — Should You Upgrade?
 
@@ -233,8 +206,6 @@ Premium gives:
 
 💡 Not required at the start, but worth it long-term.
 
-------
-
 ## 16. Best Practices Summary
 
 -   Use **one strong master password**
@@ -242,8 +213,6 @@ Premium gives:
 -   Generate passwords for every site
 -   Lock your vault when not in use
 -   Keep Bitwarden as the **only** password storage
-
-------
 
 ## 17. Final Thoughts
 
