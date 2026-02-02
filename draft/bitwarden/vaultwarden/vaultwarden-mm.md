@@ -1,6 +1,8 @@
 ---
-title: "Vaultwarden: Deploying on M4 Mac mini"
+title: "Vaultwarden: Host"
+subtitle: "M4 Mac Mini"
 icon: simple/vaultwarden
+status: 
 ---
 
 ## 0. What is Vaultwarden (and why use it)?
@@ -18,6 +20,7 @@ Compared to the official Bitwarden server:
 -   Ideal for Mac mini, Raspberry Pi, VPS, etc.
 
 ⚠️ **Important note**
+
 Vaultwarden is **unofficial**, but widely used and well-maintained.
 
 ## 1. What You Need Before Starting
