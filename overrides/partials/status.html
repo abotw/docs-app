@@ -1,0 +1,7 @@
+{% if page.meta.status == "done" %}
+  <span class="md-status md-status--done">
+    {% include ".icons/material/check-circle.svg" %}
+  </span>
+{% elif page.meta.status == "new" %}
+  <span class="md-status md-status--new"></span>
+{% endif %}

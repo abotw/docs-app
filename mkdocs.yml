@@ -7,10 +7,10 @@ theme:
   palette:
     primary: green 
   features:
-    - content.status
     - content.code.copy
     - search.suggest
     - search.highlight
+  custom_dir: overrides
 
 extra:
   status:
