@@ -10,17 +10,10 @@ theme:
     - content.code.copy
     - search.suggest
     - search.highlight
-  custom_dir: overrides
 
 extra:
   status:
-    done:
-      title: Done
-      icon: material/checkbox-outline
-    archived:
-      title: Archived
-      icon: material/archive
-      color: grey
+    done: Done
 
 markdown_extensions:
   - pymdownx.highlight:
