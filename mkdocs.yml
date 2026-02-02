@@ -7,9 +7,20 @@ theme:
   palette:
     primary: green 
   features:
+    - content.status
     - content.code.copy
     - search.suggest
     - search.highlight
+
+extra:
+  status:
+    done:
+      title: Done
+      icon: material/checkbox-outline
+    archived:
+      title: Archived
+      icon: material/archive
+      color: grey
 
 markdown_extensions:
   - pymdownx.highlight:
@@ -27,3 +38,6 @@ markdown_extensions:
 plugins:
   - search
   - typeset
+
+extra_css:
+  - stylesheets/extra.css
