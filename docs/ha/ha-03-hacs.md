@@ -1,7 +1,7 @@
 ---
 title: HACS
 icon: simple/homeassistant
-status: draft
+status: done
 ---
 
 ## 1. What is HACS?
@@ -27,8 +27,6 @@ Without HACS, installing these usually means:
 
 With HACS → **one click install & update**.
 
-------
-
 ## 2. Do you really need HACS?
 
 Short answer: **Yes, if you want to level up Home Assistant.**
@@ -41,9 +39,8 @@ You’ll want HACS if you:
 -   Hate manual updates
 
 If you only use official integrations → HACS is optional
-But most HA power users **cannot live without it** 😉
 
-------
+But most HA power users **cannot live without it** 😉
 
 ## 3. Prerequisites (Before Installing)
 
@@ -63,8 +60,6 @@ You also need:
 
 -   Internet access
 -   A Home Assistant user account (admin)
-
-------
 
 ## 4. Install HACS (Step by Step)
 
@@ -140,8 +135,6 @@ Inside HACS you’ll find sections like:
 -   **Themes**
 -   **Automations** (optional)
 
-------
-
 ## 6. Install Your First Thing with HACS
 
 ### Example: Install a Custom Integration
@@ -154,8 +147,6 @@ Inside HACS you’ll find sections like:
 6.  Restart Home Assistant
 7.  Add it via **Settings → Devices & Services**
 
-------
-
 ### Example: Install a Lovelace Card
 
 1.  HACS → **Frontend**
@@ -165,8 +156,6 @@ Inside HACS you’ll find sections like:
 5.  Add card in Dashboard UI
 
 ✨ Much nicer UI instantly
-
-------
 
 ## 7. Updating with HACS
 
@@ -182,8 +171,6 @@ You’ll often see:
 🔔 HACS → Updates available
 ```
 
-------
-
 ## 8. HACS vs Official Integrations
 
 | Feature           | Official HA | HACS      |
@@ -198,16 +185,15 @@ You’ll often see:
 -   Prefer **official** when possible
 -   Use **HACS** when official doesn’t exist
 
-------
-
 ## 9. Common Beginner Mistakes
 
 ❌ Forgetting to restart after install
-❌ Installing but not adding integration
-❌ Using Core install (HACS unsupported)
-❌ Missing GitHub auth step
 
-------
+❌ Installing but not adding integration
+
+❌ Using Core install (HACS unsupported)
+
+❌ Missing GitHub auth step
 
 ## 10. Is HACS Safe?
 
@@ -221,8 +207,6 @@ Yes, **if you are careful**:
     -   README
 
 If something breaks → disable it and restart.
-
-------
 
 ## 11. Recommended HACS Picks for Beginners
 
@@ -244,8 +228,6 @@ If something breaks → disable it and restart.
 -   Mushroom Theme
 -   iOS Theme
 -   Minimalist
-
-------
 
 ## 12. Final Thoughts
 
