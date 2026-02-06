@@ -1,5 +1,5 @@
 ---
-title: End-to-End Encryption
+title: E2EE
 status: done
 ---
 
