@@ -1,3 +1,3 @@
 # Software Docs
 
-Documents about my softwares.
+Documents about my software.

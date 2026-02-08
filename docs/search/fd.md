@@ -1,8 +1,7 @@
 ---
+title: fd
 status: done
 ---
-
-# fd
 
 *A faster, simpler replacement for `find`*
 
