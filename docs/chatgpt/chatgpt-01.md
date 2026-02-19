@@ -1,6 +1,5 @@
 ---
 title: ChatGPT
-icon: simple/openai
 status: done
 ---
 
